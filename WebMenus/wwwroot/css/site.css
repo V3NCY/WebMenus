@@ -14,11 +14,17 @@ html {
 }
 
 body {
-    margin-bottom: 60px;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /*background-repeat: no-repeat;*/
 }
 
 nav {
-    position: fixed;
+    position: sticky;
     transition: background-color 0.4s;
     background-image: linear-gradient(to bottom left, brown, purple);
     z-index: 2;
@@ -27,10 +33,9 @@ nav {
     font-weight: 500;
     font-size: 20px;
     font-family: Bainsley;
+    display: inline;
 }
 
-navbar-brand {
-}
 
 footer {
     background-image: linear-gradient(to bottom left, purple, brown);
@@ -53,7 +58,7 @@ carousel{
 
 .card {
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 5px;
     width: 100%;
     transition: all 0.2s;
     background-color: white;
@@ -82,14 +87,14 @@ button {
     margin: 5px;
     /* min-width: 120px; */
 }
-iframe {
+/*iframe {
     cursor: pointer;
     border-radius: 10px;
     width: 100%;
     transition: all 0.2s;
     background-color: white;
     box-shadow: 5px 5px 5px 5px #e5e5e5;
-}
+}*/
 about {
     cursor: pointer;
     border-radius: 10px;
@@ -97,4 +102,45 @@ about {
     transition: all 0.2s;
     background-color: white;
     box-shadow: 5px 5px 5px 5px #e5e5e5;
+}
+
+.image {
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100%;
+    transition: all 0.2s;
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px #e5e5e5;
+}
+    .image:hover {
+        transform: scale(1.03);
+    }
+
+.subheader {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+subheader:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    background-image: url(https://images.unsplash.com/photo-1613656011183-fa3433c07042?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80);
+    clip-path: polygon(0% 0,0 100%, 100% 100%);
+    z-index: -2;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+about {
+    justify-content: center;
 }
