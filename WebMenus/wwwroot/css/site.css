@@ -26,7 +26,7 @@ body {
 nav {
     position: sticky;
     transition: background-color 0.4s;
-    background-image: linear-gradient(to bottom left, brown, purple);
+    /*    background-image: linear-gradient(to bottom left, brown, purple);*/
     z-index: 2;
     backdrop-filter: blur(3px);
     color: white;
@@ -35,21 +35,44 @@ nav {
     font-family: Bainsley;
     display: inline;
 }
+    nav:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        background-image: url('https://images.pexels.com/photos/6395415/pexels-photo-6395415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        background-repeat: repeat-x;
+        /*    background: repeating-radial-gradient( purple, white);*/
+/*        clip-path: circle(0% 0,0 100%, 100% 100%);*/
+        z-index: -2;
+        background-attachment: fixed;
+        background-size: cover;
+    }
 
 
 footer {
-    background-image: linear-gradient(to bottom left, purple, brown);
+    /*    background: repeating-radial-gradient( purple, white);*/
+    background-image: url('https://images.pexels.com/photos/6395415/pexels-photo-6395415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    /*    clip-path: circle(0% 0,0 100%, 100% 100%);*/
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: repeat-x;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
 }
 
 .btn {
-    background-image: linear-gradient(to bottom left, purple, brown);
-    border-radius: 13px;
+    background-image: linear-gradient(to top left, purple, blue);
+    border-radius: 10px;
     border: none;
     justify-content: center;
 }
 
-carousel{
-}
 .card-text {
     padding: 0rem 0rem 1rem 0rem;
     font-weight: 500;
@@ -69,12 +92,11 @@ carousel{
         transform: scale(1.03);
     }
 .card-title {
-    color: purple;
+    color: black;
     font-size: 24px;
     font-weight: 500;
 }
 button {
-    outline: 0;
     border: 0;
     font-size: 20px;
     border-radius: 5px;
@@ -82,10 +104,12 @@ button {
     color: white;
     font-weight: 500;
     z-index: 1;
-    background-image: linear-gradient(to bottom left, purple, cyan);
-    padding: 10px 15px;
+    background-image: linear-gradient(to top left, purple, blue);
+    padding: 10px 10px;
     margin: 5px;
-    /* min-width: 120px; */
+    min-width: 50px;
+    cursor: pointer;
+    transition: transform 0.2s linear;
 }
 /*iframe {
     cursor: pointer;
@@ -126,7 +150,7 @@ about {
 
 }
 
-subheader:before {
+/*subheader:before {
     content: '';
     position: absolute;
     top: 0;
@@ -134,13 +158,13 @@ subheader:before {
     width: 100%;
     height: 100%;
     background: #fff;
-    background-image: url(https://images.unsplash.com/photo-1613656011183-fa3433c07042?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80);
+    background-image: linear-gradient(pink, lightcyan);
     clip-path: polygon(0% 0,0 100%, 100% 100%);
     z-index: -2;
     background-attachment: fixed;
     background-size: cover;
-}
+}*/
 
-about {
-    justify-content: center;
+.about {
+    margin-bottom: 15rem;
 }

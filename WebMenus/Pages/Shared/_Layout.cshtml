@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/test.styles.css" asp-append-version="true" />
-
+   
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-default navbar-light navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow bg-dark mb-3">
             <div class="container">
                 <a class="navbar-brand" style="color:white;" asp-area="" asp-page="/Index">
-                    <img src="https://www.svgrepo.com/show/54359/logo.svg" intrinsicsize="512 x 512" width="50" height="50" srcset="https://www.svgrepo.com/show/54359/logo.svg 4x" alt="Logo SVG Vector" title="Logo SVG Vector">
+                    <img src="https://www.svgrepo.com/show/54359/logo.svg" intrinsicsize="500 x 500" width="50" height="50" srcset="https://www.svgrepo.com/show/54359/logo.svg">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -40,7 +40,7 @@
                             <a class="nav-link text-light" asp-area="" asp-page="/About">About us</a>
                         </li>
                     </ul>
-                        <ul>
+                        <ul class="">
                             <button className="btn" type="button" style={{ cursor: "pointer" }}>
                                 Log in
                             </button>
@@ -59,9 +59,11 @@
         </main>
     </div>
 
-    <footer class=" footer text-muted">
-        <div class="container align-items-center">
-            &copy; 2022 - Website - <a asp-area="" asp-page="/Privacy">Privacy</a>
+    <footer class="footer">
+        
+        <div class="text-center text-light p-3">
+            © 2022 Copyright:
+            <a class="text-light" asp-area="" asp-page="/Privacy">All rights are preserved</a>
         </div>
     </footer>
 

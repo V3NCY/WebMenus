@@ -9,14 +9,6 @@ body[b-74nn45cua4] {
     -moz-osx-font-smoothing: grayscale;
 
 }
-/*.row {
-    display: inline-block;
-}*/
-a.navbar-brand[b-74nn45cua4] {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
-}
 
 a[b-74nn45cua4] {
   color: #0077cc;
@@ -49,15 +41,6 @@ button.accept-policy[b-74nn45cua4] {
   line-height: inherit;
 }
 
-.footer[b-74nn45cua4] {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    white-space: nowrap;
-    line-height: 60px;
-    align-items: center;
-}
 video[b-74nn45cua4] {
     top: 0;
     object-fit: cover;
@@ -70,9 +53,9 @@ card[b-74nn45cua4] {
     position: absolute;
     padding: 13px;
 }
-/*.about {
+.about[b-74nn45cua4] {
     margin-bottom: 15rem;
-}*/
+}
 .container[b-74nn45cua4] {
     width: auto;
     max-width: 1300px;
