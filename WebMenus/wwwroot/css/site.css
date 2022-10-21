@@ -98,9 +98,8 @@ footer {
 }
 button {
     border: 0;
-    font-size: 20px;
+    font-size: 15px;
     border-radius: 5px;
-    text-decoration: none;
     color: white;
     font-weight: 500;
     z-index: 1;

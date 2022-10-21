@@ -3,11 +3,11 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace WebMenus.Pages
 {
-    public class PrivacyModel : PageModel
+    public class FAQModel : PageModel
     {
-        private readonly ILogger<PrivacyModel> _logger;
+        private readonly ILogger<FAQModel> _logger;
 
-        public PrivacyModel(ILogger<PrivacyModel> logger)
+        public FAQModel(ILogger<FAQModel> logger)
         {
             _logger = logger;
         }
