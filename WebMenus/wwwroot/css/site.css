@@ -96,6 +96,7 @@ footer {
     font-size: 24px;
     font-weight: 500;
 }
+
 button {
     border: 0;
     font-size: 15px;
@@ -166,4 +167,26 @@ about {
 
 .about {
     margin-bottom: 15rem;
+    transition: all 0.2s;
+}
+.circle-one {
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.circle-two {
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.circle-three {
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.circle-one:hover {
+    transform: scale(1.03);
+}
+    .circle-two:hover {
+        transform: scale(1.03);
+    }
+.circle-three:hover {
+    transform: scale(1.03);
 }
