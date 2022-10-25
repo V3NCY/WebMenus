@@ -10,13 +10,9 @@ body {
 }
 
 a {
-  color: #0077cc;
+/*  color: #0077cc;*/
 }
 
-.btn-primary {
-  color: #fff;
-
-}
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   color: #fff;
@@ -35,10 +31,10 @@ a {
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
 
-button.accept-policy {
+/*button.accept-policy {
   font-size: 1rem;
   line-height: inherit;
-}
+}*/
 
 video {
     top: 0;

@@ -10,13 +10,9 @@ body[b-74nn45cua4] {
 }
 
 a[b-74nn45cua4] {
-  color: #0077cc;
+/*  color: #0077cc;*/
 }
 
-.btn-primary[b-74nn45cua4] {
-  color: #fff;
-
-}
 
 .nav-pills .nav-link.active[b-74nn45cua4], .nav-pills .show > .nav-link[b-74nn45cua4] {
   color: #fff;
@@ -35,10 +31,10 @@ a[b-74nn45cua4] {
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
 
-button.accept-policy[b-74nn45cua4] {
+/*button.accept-policy {
   font-size: 1rem;
   line-height: inherit;
-}
+}*/
 
 video[b-74nn45cua4] {
     top: 0;

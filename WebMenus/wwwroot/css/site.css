@@ -56,7 +56,7 @@ nav {
 footer {
     /*    background: repeating-radial-gradient( purple, white);*/
     background-image: url('https://images.pexels.com/photos/6395415/pexels-photo-6395415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-    /*    clip-path: circle(0% 0,0 100%, 100% 100%);*/
+/*        clip-path: circle(0% 0,0 100%, 100% 100%);*/
     background-attachment: fixed;
     background-size: cover;
     background-repeat: repeat-x;
@@ -66,11 +66,30 @@ footer {
     backdrop-filter: blur(3px);
 }
 
+/*butoni na index page*/
+
 .btn {
+
     background-image: linear-gradient(to top left, purple, blue);
-    border-radius: 10px;
+    border-radius: 5px;
     border: none;
     justify-content: center;
+    color: white;
+}
+/*Ostanli butoni*/
+button {
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    z-index: 2;
+    background-image: linear-gradient(to top left, purple, blue);
+    padding: 10px 10px;
+    margin: 5px;
+    color: white;
+    min-width: 50px;
+    cursor: pointer;
+    transition: transform 0.2s linear;
+    border-radius: 5px;
 }
 
 .card-text {
@@ -97,20 +116,6 @@ footer {
     font-weight: 500;
 }
 
-button {
-    border: 0;
-    font-size: 15px;
-    border-radius: 5px;
-    color: white;
-    font-weight: 500;
-    z-index: 1;
-    background-image: linear-gradient(to top left, purple, blue);
-    padding: 10px 10px;
-    margin: 5px;
-    min-width: 50px;
-    cursor: pointer;
-    transition: transform 0.2s linear;
-}
 /*iframe {
     cursor: pointer;
     border-radius: 10px;
