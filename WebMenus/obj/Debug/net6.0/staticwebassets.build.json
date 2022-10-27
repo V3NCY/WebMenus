@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+t8gv5LFAOh8aMhVBe/jKGzcYxj+Lu6Nw9ptYu9QY78=",
+  "Hash": "dccWisBUT6HmjJYBuPfwowG5154oCYNgSCxx1UWZNYI=",
   "Source": "WebMenus",
   "BasePath": "_content/WebMenus",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\orak\\Desktop\\WebMenus\\WebMenus\\wwwroot\\css\\site.scss",
+      "SourceId": "WebMenus",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\orak\\Desktop\\WebMenus\\WebMenus\\wwwroot\\",
+      "BasePath": "_content/WebMenus",
+      "RelativePath": "css/site.scss",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site.scss"
     },
     {
       "Identity": "C:\\Users\\orak\\Desktop\\WebMenus\\WebMenus\\wwwroot\\favicon.ico",
