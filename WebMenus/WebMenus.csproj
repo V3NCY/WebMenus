@@ -7,13 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Pages\Cart.cs" />
-    <Compile Remove="Pages\Cart.cshtml.cs" />
     <Compile Remove="Pages\ShoppingCartActions.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Remove="Pages\Cart.cshtml" />
     <Content Remove="Pages\Cart.razor" />
     <Content Remove="Pages\CartButtons.razor" />
     <Content Remove="Pages\CartItem.razor" />

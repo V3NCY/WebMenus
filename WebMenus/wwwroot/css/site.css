@@ -1,4 +1,4 @@
-html {
+﻿html {
     font-size: 14px;
 }
 
@@ -35,6 +35,7 @@ nav {
     font-family: Bainsley;
     display: inline;
 }
+
     nav:before {
         content: '';
         position: absolute;
@@ -46,7 +47,7 @@ nav {
         background-image: url('https://images.pexels.com/photos/6395415/pexels-photo-6395415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
         background-repeat: repeat-x;
         /*    background: repeating-radial-gradient( purple, white);*/
-/*        clip-path: circle(0% 0,0 100%, 100% 100%);*/
+        /*        clip-path: circle(0% 0,0 100%, 100% 100%);*/
         z-index: -2;
         background-attachment: fixed;
         background-size: cover;
@@ -56,7 +57,7 @@ nav {
 footer {
     /*    background: repeating-radial-gradient( purple, white);*/
     background-image: url('https://images.pexels.com/photos/6395415/pexels-photo-6395415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-/*        clip-path: circle(0% 0,0 100%, 100% 100%);*/
+    /*        clip-path: circle(0% 0,0 100%, 100% 100%);*/
     background-attachment: fixed;
     background-size: cover;
     background-repeat: repeat-x;
@@ -69,12 +70,18 @@ footer {
 /*butoni na index page*/
 
 .btn {
-
-    background-image: linear-gradient(to top left, purple, blue);
-    border-radius: 5px;
     border: none;
-    justify-content: center;
+    font-size: 15px;
+    font-weight: 500;
+    z-index: 2;
+    background-image: linear-gradient(to top left, purple, blue);
+    padding: 10px 10px;
+    margin: 5px;
     color: white;
+    min-width: 50px;
+    cursor: pointer;
+    transition: transform 0.2s linear;
+    border-radius: 5px;
 }
 /*Ostanli butoni*/
 button {
@@ -110,6 +117,7 @@ button {
     .card:hover {
         transform: scale(1.03);
     }
+
 .card-title {
     color: black;
     font-size: 24px;
@@ -141,6 +149,7 @@ about {
     background-color: white;
     box-shadow: 5px 5px 5px 5px #e5e5e5;
 }
+
     .image:hover {
         transform: scale(1.03);
     }
@@ -152,7 +161,6 @@ about {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 /*subheader:before {
@@ -174,27 +182,34 @@ about {
     margin-bottom: 15rem;
     transition: all 0.2s;
 }
+
 .circle-one {
     cursor: pointer;
     transition: all 0.2s;
 }
+
 .circle-two {
     cursor: pointer;
     transition: all 0.2s;
 }
+
 .circle-three {
     cursor: pointer;
     transition: all 0.2s;
 }
+
 .circle-one:hover {
     transform: scale(1.03);
 }
-    .circle-two:hover {
-        transform: scale(1.03);
-    }
+
+.circle-two:hover {
+    transform: scale(1.03);
+}
+
 .circle-three:hover {
     transform: scale(1.03);
 }
+
 .navbar-left {
     float: left;
 }
@@ -204,10 +219,12 @@ li {
     display: inline;
     padding-left: 20px;
 }
+
 a {
     color: #777777;
     text-decoration: none;
 }
+
 &:hover {
     color: black;
 }
