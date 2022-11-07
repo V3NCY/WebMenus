@@ -17,135 +17,109 @@
     .minus-btn{
         border-radius: 5px;
     }
+    .checkout-btn{
+        border-radius: 5px;
+    }
 </style>
 <script>
-
-    $('.like-btn').on('click', function () {
-        $(this).toggleClass('is-active');
-    });
-    $('.minus-btn').on('click', function (e) {
-        e.preventDefault();
-        var $this = $(this);
-        var $input = $this.closest('div').find('input');
-        var value = parseInt($input.val());
-
-        if (value & amp; amp; gt; 1) {
-        value = value - 1;
-    } else {
-        value = 0;
+    function Checkout() {
+        alert("SUCCESSFUL CHECKOUT! YOUR ORDER IS: 1141");
     }
-
-    $input.val(value);
-
-    });
-
-    $('.plus-btn').on('click', function (e) {
-        e.preventDefault();
-        var $this = $(this);
-        var $input = $this.closest('div').find('input');
-        var value = parseInt($input.val());
-
-        if (value & amp; amp; lt; 100) {
-        value = value + 1;
-    }
-    else {
-        value = 100;
-    }
-
-    $input.val(value);
-    });
 </script>
 @{
     <div class="shopping-cart">
-                                        <!-- Title -->
-                                        <div class="title">
-                                            Shopping Cart
-                                        </div>
+                                                <!-- Title -->
+                                                <div class="title">
+                                                    Shopping Cart
+                                                </div>
 
-                                        <!-- Product #1 -->
-                                    <div class="container">
-                                    <div class="row">
-                                    <div class="col-sm-3">
-                                            <div class="image">
-                                            <img src="https://images.unsplash.com/photo-1579551562441-049906a6e231?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" width="100%" style="border-radius: 5px;"/>
+                                                <!-- Product #1 -->
+                                            <div class="container">
+                                            <div class="row">
+                                            <div class="col-sm-3">
+                                                    <div class="image">
+                                                    <img src="https://images.unsplash.com/photo-1579551562441-049906a6e231?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" width="100%" style="border-radius: 5px;"/>
+                                                    </div>
                                             </div>
-                                    </div>
-                                    </div>
-                                    </div>
-
-                                            <div class="description">
-                                            <span>Washimi Combo</span>
+                                            </div>
                                             </div>
 
-                                            <div class="quantity">
-                                                <button class="plus-btn" type="button" name="button">
-                                                <img src="plus.svg" alt="" />
-                                                </button>
-                                                <input type="text" name="name" value="1">
-                                                <button class="minus-btn" type="button" name="button">
-                                                <img src="minus.svg" alt="" />
-                                                </button>
-                                            </div>
+                                                    <div class="description">
+                                                    <span>Washimi Combo</span>
+                                                    </div>
 
-                                            <div class="total-price">$15</div>
+                                                    <div class="quantity">
+                                                        <button class="plus-btn" type="button" name="button">
+                                                          <i>-</i>
+                                                        </button>
+                                                        <input type="text" name="name" value="1">
+                                                        <button class="minus-btn" type="button" name="button">
+                                                        <i>+</i>
+                                                        </button>
+                                                    </div>
+
+                                                    <div class="total-price">$15</div>
     </div>
 
     <!-- Product #2 -->
     <div class="item">
-                                 
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-sm-3">
-                                            <div class="image">
-                                        <img src="https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="100%" style="border-radius: 5px;" />
-                                            </div>
-                                            </div>
-                                            </div>
-                                            </div>
+                                         
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-sm-3">
+                                                    <div class="image">
+                                                <img src="https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="100%" style="border-radius: 5px;" />
+                                                    </div>
+                                                    </div>
+                                                    </div>
+                                                    </div>
 
-                                            <div class="description">
-                                            <span>Pork Burger with Potatos</span>
-                                            </div>
+                                                    <div class="description">
+                                                    <span>Pork Burger with Potatos</span>
+                                                    </div>
 
-                                            <div class="quantity">
-                                                <button class="plus-btn" type="button" name="button">
-                                                    <img src="plus.svg" alt="" />
-                                                </button>
-                                                <input type="text" name="name" value="1">
-                                                <button class="minus-btn" type="button" name="button">
-                                                    <img src="minus.svg" alt="" />
-                                                </button>
-                                            </div>
+                                                    <div class="quantity">
+                                                        <button class="plus-btn" type="button" name="button">
+                                                        <i>-</i>
+                                                        </button>
+                                                        <input type="text" name="name" value="1">
+                                                        <button class="minus-btn" type="button" name="button">
+                                                        <i>+</i>
+                                                        </button>
+                                                    </div>
 
-                                            <div class="total-price">$8</div>
+                                                    <div class="total-price">$8</div>
     </div>
 
     <!-- Product #3 -->
     <div class="item">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-sm-3">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-sm-3">
 
-                                            <div class="image">
-                                        <img src="https://images.unsplash.com/photo-1523218507958-81785af4f6e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" width="100%" style="border-radius: 5px;" />
-                                            </div>
-                                            </div>
-                                            </div>
-                                            </div>
-                                            <div class="description">
-                                                <span>Flower Salad</span>
-                                            </div>
+                                                    <div class="image">
+                                                <img src="https://images.unsplash.com/photo-1523218507958-81785af4f6e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" width="100%" style="border-radius: 5px;" />
+                                                    </div>
+                                                    </div>
+                                                    </div>
+                                                    </div>
+                                                    <div class="description">
+                                                        <span>Flower Salad</span>
+                                                    </div>
 
-                                            <div class="quantity">
-                                                <button class="plus-btn" type="button" name="button">
-                                                    <img src="plus.svg" alt="" />
-                                                </button>
-                                                <input type="text" name="name" value="1">
-                                                <button class="minus-btn" type="button" name="button">
-                                                    <img src="minus.svg" alt="" />
-                                                </button>
-                                            </div>
+                                                    <div class="quantity">
+                                                        <button class="plus-btn" type="button" name="button">
+                                                            <i>-</i>
+                                                        </button>
+                                                        <input type="text" name="name" value="1">
+                                                        <button class="minus-btn" type="button" name="button">
+                                                            <i>+</i>
+                                                        </button>
+                                                    </div>
 
-                                            <div class="total-price">$5</div>
+                                                    <div class="total-price">$5</div>
+            <div>
+                <button type="submit" onclick="Checkout()" class="checkout-btn">Checkout</button>
+            </div>
     </div>
 }
