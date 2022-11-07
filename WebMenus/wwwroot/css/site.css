@@ -23,6 +23,7 @@ body {
     /*background-repeat: no-repeat;*/
 }
 
+
 nav {
     position: sticky;
     transition: background-color 0.4s;
