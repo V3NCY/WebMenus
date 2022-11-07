@@ -19,11 +19,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Pages\Images\minus.svg" />
-    <Content Include="Pages\Images\plus.svg" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.10" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.10" />
