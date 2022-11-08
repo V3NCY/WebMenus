@@ -20,16 +20,26 @@
             <div class="form-group">
                 <label for="exampleFormControlSelect1">Payment method:</label>
                 <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Online /ePay, Google Pay, Revolute, Mastercard, VISA, etc./</option>
+                    <option>Online</option>
                     <option>When delivered</option>
-                    
                 </select>
             </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect2">For online payment method:</label>
+            <select multiple class="form-control" id="exampleFormControlSelect2">
+                <option>Mastercard</option>
+                <option>Visa</option>
+                <option>ePay</option>
+                <option>Revolut</option>
+                <option>Google Pay</option>
+                <option>PayPal</option>
+            </select>
+        </div>
            
             <div class="form-group">
-                <label for="exampleFormControlTextarea1">Additional Information</label>
+                <label for="exampleFormControlTextarea1">Additional Information:</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
-            <button class="btn" onclick="Checkout()" type="submit">Submit</button>
+        <button class="btn" type="submit" onclick="Checkout()">Submit</button>
     </form>
 }
