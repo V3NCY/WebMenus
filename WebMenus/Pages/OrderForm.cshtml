@@ -4,42 +4,46 @@
     function Checkout() {
         alert("SUCCESSFUL CHECKOUT! YOUR ORDER IS: 1141");
     }
+    function Reset() {
+        document.getElementById("reset").reset();
+    }
 </script>
 @{
     <form>
-            <div class="form-group">
-                <label for="exampleFormControlInput1">Name:</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Christopher Peterson">
-                <label for="exampleFormControlInput1">Billing Address:</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="23 Tame Street">
-                <label for="exampleFormControlInput1">Phone:</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="+359 888 888 888">
-                <label for="exampleFormControlInput1">Email address:</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlSelect1">Payment method:</label>
-                <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Online</option>
-                    <option>When delivered</option>
-                </select>
-            </div>
-        <div class="form-group">
-            <label for="exampleFormControlSelect2">For online payment method:</label>
-            <select multiple class="form-control" id="exampleFormControlSelect2">
-                <option>Mastercard</option>
-                <option>Visa</option>
-                <option>ePay</option>
-                <option>Revolut</option>
-                <option>Google Pay</option>
-                <option>PayPal</option>
-            </select>
-        </div>
-           
-            <div class="form-group">
-                <label for="exampleFormControlTextarea1">Additional Information:</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-        <button class="btn" type="submit" onclick="Checkout()">Submit</button>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Name:</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Christopher Peterson">
+                        <label for="exampleFormControlInput1">Billing Address:</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="23 Tame Street">
+                        <label for="exampleFormControlInput1">Phone:</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="+359 888 888 888">
+                        <label for="exampleFormControlInput1">Email address:</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Payment method:</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Online</option>
+                            <option>When delivered</option>
+                        </select>
+                    </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect2">For online payment method:</label>
+                    <select multiple class="form-control" id="exampleFormControlSelect2">
+                        <option>Mastercard</option>
+                        <option>Visa</option>
+                        <option>ePay</option>
+                        <option>Revolut</option>
+                        <option>Google Pay</option>
+                        <option>PayPal</option>
+                    </select>
+                </div>
+                   
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Additional Information:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                <button class="btn" type="submit" onclick="Checkout()">Submit</button>
+                <input class="btn" onclick="reset" type="reset" value="Reset">
     </form>
 }
