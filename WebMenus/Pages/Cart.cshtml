@@ -39,95 +39,117 @@
             val--;
         }
         document.getElementById('output').innerHTML = val;
+    };
+
+    function clicks(v) {
+
+        var val = document.getElementById('clicks').innerHTML;
+        if (v == 'plus') {
+            val++;
+        } else {
+            val--;
+        }
+        document.getElementById('clicks').innerHTML = val;
+    };
+
+    function ticks(v) {
+
+        var val = document.getElementById('ticks').innerHTML;
+        if (v == 'plus') {
+            val++;
+        } else {
+            val--;
+        }
+        document.getElementById('ticks').innerHTML = val;
     }
 </script>
 @{
     <div class="shopping-cart">
-            <div class="title">
-                Shopping Cart
-            </div>
+                <div class="title">
+                    Shopping Cart
+                </div>
+
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="image">
+                                    <img src="https://images.unsplash.com/photo-1579551562441-049906a6e231?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" width='100%' style="border-radius: 5px;" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="description">
+                        <span>Washimi Combo</span>
+                    </div>
+
+                <div class="quantity">
+                    <button class="minus-btn" type="button" id="minus" onclick="outFunc('minus')">
+                        <i>-</i>
+                    </button>
+                    <span id="output">1</span>
+                    <button class="plus-btn" id="plus" type="button" onclick="outFunc('plus')">
+                        <i>+</i>
+                    </button>
+                </div>
+            <div class="total-price">$15</div>
 
 
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-3">
                             <div class="image">
-                                <img src="https://images.unsplash.com/photo-1579551562441-049906a6e231?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" width='100%' style="border-radius: 5px;" />
+                                <img src="https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="100%" style="border-radius: 5px;" />
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="description">
-                    <span>Washimi Combo</span>
+                    <span>Pork Burger with Potatos</span>
                 </div>
 
-            <div class="quantity">
-                <button class="minus-btn" type="button" id="minus" onclick="outFunc('minus')">
-                    <i>-</i>
-                </button>
-                <span id="output">1</span>
-                <button class="plus-btn" id="plus" type="button" onclick="outFunc('plus')">
-                    <i>+</i>
-                </button>
-            </div>
-        <div class="total-price">$15</div>
+                <div class="quantity">
+                    <button class="minus-btn" type="button" id="minus" onclick="clicks('minus')">
+                        <i>-</i>
+                    </button>
+                    <span id="clicks">1</span>
+                    <button class="plus-btn" id="plus" type="button" onclick="clicks('plus')">
+                        <i>+</i>
+                    </button>
+                </div>
 
+        <div class="total-price">$8</div>
 
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-3">
-                        <div class="image">
-                            <img src="https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="100%" style="border-radius: 5px;" />
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3">
+
+                            <div class="image">
+                            <img src="https://images.unsplash.com/photo-1523218507958-81785af4f6e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" width="100%" style="border-radius: 5px;" />
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="description">
-                <span>Pork Burger with Potatos</span>
-            </div>
-
-            <div class="quantity">
-                <button class="minus-btn" type="button" id="minus" onclick="outFunc('minus')">
-                    <i>-</i>
-                </button>
-                <span id="output">1</span>
-                <button class="plus-btn" id="plus" type="button" onclick="outFunc('plus')">
-                    <i>+</i>
-                </button>
-            </div>
-
-    <div class="total-price">$8</div>
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-3">
-
-                        <div class="image">
-                        <img src="https://images.unsplash.com/photo-1523218507958-81785af4f6e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" width="100%" style="border-radius: 5px;" />
-                        </div>
-                    </div>
+                <div class="description">
+                    <span>Flower Salad</span>
                 </div>
-            </div>
-            <div class="description">
-                <span>Flower Salad</span>
-            </div>
 
-            <div class="quantity">
-                <button class="minus-btn" type="button" id="minus" onclick="outFunc('minus')">
-                    <i>-</i>
-                </button>
-                <span id="output">1</span>
-                <button class="plus-btn" id="plus" type="button" onclick="outFunc('plus')">
-                    <i>+</i>
-                </button>
-            </div>
+                <div class="quantity">
+                    <button class="minus-btn" type="button" id="minus" onclick="ticks('minus')">
+                        <i>-</i>
+                    </button>
+                    <span id="ticks">1</span>
+                    <button class="plus-btn" id="plus" type="button" onclick="ticks('plus')">
+                        <i>+</i>
+                    </button>
+                </div>
 
-    <div class="total-price">$5</div>
-    <br>
-    <div>
-            <button type="submit" onclick="Checkout()" class="checkout-btn">Checkout</button>
-    </div>
+        <div class="total-price">$5</div>
+        <br>
+        <div>
+                <button type="submit" onclick="Checkout()" class="checkout-btn">Checkout</button>
+        </div>
     </div>
 }
