@@ -67,8 +67,12 @@
                             <a class="nav-link text-light" asp-area="" asp-page="/OrderForm"></a>
                         </li>
                     </ul>
-
-                        <a class="cart position-relative d-flex" asp-page="/Cart" aria-label="Shopping Cart"><i class="fas fa fa-shopping-cart fa-lg"></i></a>
+                    <div class="row">
+                        <div class="col">
+                            <button type="button" class="btn" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button><button class="clear-cart btn">Clear Cart</button>
+                        </div>
+                    </div>
+                        @*<a class="cart position-relative d-flex" asp-page="/Cart" aria-label="Shopping Cart"><i class="fas fa fa-shopping-cart fa-lg"></i></a>*@
                         @*<a class="btn" type="button">
                             Log in
                         </a>
