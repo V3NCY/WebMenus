@@ -1,7 +1,7 @@
 ﻿@page
 @model WebMenus.Pages.OrderFormModel
 <script>
-    function Checkout() {
+    function Submit() {
         alert("Your order is successful. Code: 1141");
         window.location.reload();
     }
@@ -41,7 +41,7 @@
                                 <label for="exampleFormControlTextarea1">Additional Information:</label>
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                             </div>
-                        <button class="btn" type="submit" onclick="Checkout()">Submit</button>
+                        <button class="btn" type="submit" onclick="Submit()">Submit</button>
                         <input class="btn" onclick="reset" type="reset" value="Reset">
     </form>
     
