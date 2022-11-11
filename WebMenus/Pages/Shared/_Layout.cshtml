@@ -70,7 +70,7 @@
                     </ul>
                     <div class="row">
                         <div class="col">
-                            <button type="button" class="btn" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button><button class="clear-cart btn">Clear Cart</button>
+                            <button type="button" class="btn" data-toggle="modal" data-target="#cart"><i class="fa" style="font-size:24px">&#xf07a;</i><span class="total-count badge badge-warning'" id='lblCartCount'></span></button><button class="clear-cart btn">Clear Cart</button>
                         </div>
                     </div>
                         @*<a class="cart position-relative d-flex" asp-page="/Cart" aria-label="Shopping Cart"><i class="fas fa fa-shopping-cart fa-lg"></i></a>*@
@@ -87,28 +87,28 @@
 
     </header>
     <!-- Modal -->
-<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <table class="show-cart table">
-                </table>
-                <div>Total price: $<span class="total-cart"></span></div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn" data-dismiss="modal">Close</button>
-                <button type="button" class="btn" onclick="Checkout()">Order now</button>
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="show-cart table">
+                    </table>
+                    <div>Total price: $<span class="total-cart"></span></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn" onclick="Checkout()">Order now</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- End of Modal -->
+    <!-- End of Modal -->
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -135,14 +135,13 @@
     function Checkout() {
         window.location = "/OrderForm";
     }
-    // ************************************************
+   
     // Shopping Cart API
-    // ************************************************
 
     var shoppingCart = (function () {
-        // =============================
+
         // Private methods and propeties
-        // =============================
+
         cart = [];
 
         // Constructor
@@ -166,9 +165,8 @@
         }
 
 
-        // =============================
         // Public methods and propeties
-        // =============================
+
         var obj = {};
 
         // Add to cart
@@ -258,24 +256,11 @@
             return cartCopy;
         }
 
-        // cart : Array
-        // Item : Object/Class
-        // addItemToCart : Function
-        // removeItemFromCart : Function
-        // removeItemFromCartAll : Function
-        // clearCart : Function
-        // countCart : Function
-        // totalCart : Function
-        // listCart : Function
-        // saveCart : Function
-        // loadCart : Function
         return obj;
     })();
 
-
-    // *****************************************
     // Triggers / Events
-    // *****************************************
+
     // Add item
     $('.add-to-cart').click(function (event) {
         event.preventDefault();
