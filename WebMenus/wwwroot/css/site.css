@@ -68,7 +68,6 @@ footer {
     backdrop-filter: blur(3px);
 }
 
-/*butoni na index page*/
 
 .btn {
     border: none;
@@ -85,25 +84,23 @@ footer {
     border-radius: 5px;
 }
 
-
-/*Ostanli butoni*/
-button {
+.button {
     border: none;
     font-size: 15px;
     font-weight: 500;
     z-index: 2;
-    background-image: linear-gradient(to top left, purple, blue);
+/*    background-image: linear-gradient(to top left, purple, blue);*/
     padding: 10px 10px;
     margin: 5px;
     color: white;
     min-width: 50px;
     cursor: pointer;
     transition: transform 0.2s linear;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
 .card-text {
-    padding: 0rem 0rem 1rem 0rem;
+    padding: 0rem 0rem 1rem 1rem;
     font-weight: 500;
     font-size: 18px;
 }
@@ -125,6 +122,16 @@ button {
     color: black;
     font-size: 24px;
     font-weight: 500;
+    padding: 0rem 0rem 1rem 1rem;
+}
+
+.card-block {
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    transition: all 0.2s;
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px #e5e5e5;
 }
 
 
@@ -158,6 +165,7 @@ about {
     justify-content: center;
     align-items: center;
 }
+/*Background gradient*/
 
 /*subheader:before {
     content: '';
@@ -173,7 +181,9 @@ about {
     background-attachment: fixed;
     background-size: cover;
 }*/
+/*End of Background gradient*/
 
+/*Designers*/
 .about {
     margin-bottom: 15rem;
     transition: all 0.2s;
@@ -209,8 +219,9 @@ about {
 .navbar-left {
     float: left;
 }
+/*End of Designers*/
 
-
+/*Navbar spacing of links and a*/
 li {
     display: inline;
     padding-left: 20px;
@@ -220,10 +231,11 @@ a {
     color: #777777;
     text-decoration: none;
 }
+/*End of Navbar spacing of links and a*/
 
-&:hover {
+/*&:hover {
     color: black;
-}
+}*/
 
 /*Cart count*/
 #lblCartCount {
