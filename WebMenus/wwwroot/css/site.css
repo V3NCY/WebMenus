@@ -92,11 +92,11 @@ footer {
 /*    background-image: linear-gradient(to top left, purple, blue);*/
     padding: 10px 10px;
     margin: 5px;
-    color: white;
+    color: black;
     min-width: 50px;
     cursor: pointer;
-    transition: transform 0.2s linear;
-    border-radius: 6px;
+/*    transition: transform 0.2s linear;*/
+    border-radius: 5px;
 }
 
 .card-text {
