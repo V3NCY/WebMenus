@@ -276,7 +276,7 @@
         displayCart();
     });
 
-
+    //Increase, decrease, form-control and remove options
     function displayCart() {
         var cartArray = shoppingCart.listCart();
         var output = "";
@@ -297,16 +297,13 @@
         $('.total-count').html(shoppingCart.totalCount());
     }
 
-    // Delete item button
-
-    
+    // Delete item button    
 
     $('.show-cart').on("click", ".delete-item", function (event) {
         var name = $(this).data('name')
         shoppingCart.removeItemFromCartAll(name);
         displayCart();
     })
-
 
     // -1
     $('.show-cart').on("click", ".minus-item", function (event) {
