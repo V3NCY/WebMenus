@@ -83,7 +83,10 @@ footer {
     transition: transform 0.2s linear;
     border-radius: 5px;
 }
-
+.deletebtn {
+    float: left;
+    width: 50%;
+}
 .button {
     border: none;
     font-size: 15px;
@@ -260,3 +263,4 @@ a {
     background-color: #c67605;
 }
 /* End of Cart count*/
+
